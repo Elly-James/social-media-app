@@ -37,10 +37,10 @@ function Comments() {
     return (
       <div>
         <form  className='form'    onSubmit={handleSubmit}>
-            
-          <label htmlFor="comments">Add Comment</label>
-          <input type="text" onChange={handleUserNameChange} value={userName} />
-          <textarea id="comments" name="commenta" rows="4" cols="50" onChange={handleCommentChange} value={comment}></textarea>
+         <legend>Add Comment</legend>
+         
+          <input type="text" onChange={handleUserNameChange} value={userName} name='UserName' placeholder='User Name'/>
+          <textarea id="comments" name="commenta" rows="4" cols="50" onChange={handleCommentChange} value={comment} placeholder='Comment'></textarea>
           <button type="submit">Submit</button>
         </form>
         <h2 className='my-profile'>Comments</h2>

@@ -38,9 +38,9 @@ function Profile() {
     return (
       <div>
         <form  className='form'    onSubmit={handleSubmit}>
-         <label htmlFor="profile">Add UserName and Image</label>
-          <input type="text" onChange={handleUserNameChange} value={userName} />
-          <input type="text" onChange={handleImgUrlChange} value={imgUrl} />
+          <legend>Add UserName and Image</legend>
+          <input type="text" onChange={handleUserNameChange} value={userName}  name='Username' placeholder='User Name'/>
+          <input type="text" onChange={handleImgUrlChange} value={imgUrl}  name='image url' placeholder='image url'/>
           <button type="submit">Submit</button>
         </form>
         <h2 className='my-profile'>My Profile</h2>
